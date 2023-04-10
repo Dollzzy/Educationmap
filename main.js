@@ -12,7 +12,13 @@
  var link = document.getElementById("link")
  var menuPP = document.getElementById('menuPP')
  var MenuBtn = document.getElementById('MenuBtn')
+ var SettingsClosePP = document.getElementById('SettingsClosePP')
  var MenuClosePP = document.getElementById("MenuClosePP")
+ var btnSettings = document.getElementById("btnSettings")
+ var SettingsOpen = document.getElementById("SettingsOpen")
+ var VersionOpen = document.getElementById("VersionOpen")
+ var VersionClosePP = document.getElementById("VersionClosePP")
+ var btnVer = document.getElementById("btnVer")
  SearchINP.addEventListener('keypress', function (e) {
       var inp2 = SearchINP;
       if (e.key === 'Enter') {
@@ -54,6 +60,19 @@
   })
   MenuClosePP.addEventListener('click',()=> {
     menuPP.style.display= 'none'
+  })
+
+  btnSettings.addEventListener("click", ()=> {
+    SettingsOpen.style.display = 'block'
+  })
+  btnVer.addEventListener("click", ()=> {
+    VersionOpen.style.display = 'block'
+  })
+  SettingsClosePP.addEventListener("click", ()=> {
+    SettingsOpen.style.display = 'none'
+  })
+  VersionClosePP.addEventListener("click", ()=> {
+    VersionOpen.style.display = 'none'
   })
 
   function SH() {
