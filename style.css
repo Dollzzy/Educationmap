@@ -103,6 +103,7 @@ body {
       background-color: transparent;
       border: none;
       color: white;
+      cursor: pointer;
 }
 #list {
       position: absolute;
@@ -130,7 +131,13 @@ body {
       align-items: center;
       font-size: 20px;
       color: white;
-      border-radius: 5px
+      border-radius: 5px;
+      cursor: pointer;
+}
+#elemnt1:hover {
+      border-left: 2px solid grey;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
 }
 li {
       list-style: none;
@@ -202,6 +209,7 @@ li {
       height: 200px;
       background-color: rgb(32, 32, 32);
       border-radius: 5px;
+      cursor: pointer;
 }
 #link2 {
       position: absolute;
@@ -255,6 +263,7 @@ li {
       background-color: transparent;
       border: none;
       color: white;
+      cursor: pointer;
 }
 .titluA1 {
       position: absolute;
@@ -380,10 +389,23 @@ li {
       cursor: pointer;
       border-radius: 5px;
 }
-#btnSettings {
+#btnInfo {
       transition: 0.5s;
       position: absolute;
       top: 60px;
+      width: 100%;
+      height: 50px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 5px;
+}
+#btnSettings {
+      transition: 0.5s;
+      position: absolute;
+      top: 120px;
       width: 100%;
       height: 50px;
       background-color: transparent;
@@ -401,12 +423,29 @@ li {
       transition: 0.5s;
       background-color: grey;
 }
+#btnInfo:hover {
+      transition: 0.5s;
+      background-color: grey;
+}
 .BTNIconHome {
       position: absolute;
       left: 5px;
       width: 45px;
       height: 45px;
       background-color: rgb(255, 131, 74);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+}
+.BTNIconInfo {
+      position: absolute;
+      left: 5px;
+      width: 45px;
+      height: 45px;
+      background-color: rgb(74, 137, 255);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -428,6 +467,16 @@ li {
       font-weight: bold;
 }
 .textBtnHome {
+      width: 200px;
+      height: 40px;
+      background-color:transparent;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      font-size: 18px;
+      color: white;
+}
+.textBtnInfo {
       width: 200px;
       height: 40px;
       background-color:transparent;
@@ -576,14 +625,44 @@ li {
       background-color: rgb(44, 44, 44);
       overflow-y: auto;
 }
+#InfoOpen {
+      position: absolute;
+      right: 0px;
+      width: 100%;
+      height: 100%;
+      max-width: 400px;
+      background-color: rgb(44, 44, 44);
+      overflow-y: auto;
+}
+#InfoHeader {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 50px;
+      background-color: rgb(44, 44, 44);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
 #headerVer {
       position: absolute;
       top: 0px;
       width: 100%;
       height: 50px;
       background-color: rgb(44, 44, 44);
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 #mainVer {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(44, 44, 44);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+#mainINfo {
       width: 100%;
       height: 100%;
       background-color: rgb(44, 44, 44);
@@ -602,10 +681,35 @@ li {
       cursor: pointer;
       border-radius: 50%;
 }
+#InfoClosePP {
+      position: absolute;
+      left: 10px;
+      width: 45px;
+      height: 45px;
+      background-color: transparent;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 50%;
+}
 #VersionClosePP:hover {
       background-color: rgb(53, 53, 53);
 }
+#InfoClosePP:hover {
+      background-color: rgb(53, 53, 53);
+}
 #headerVErsion {
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      height: 50px;
+      background-color: rgb(44, 44, 44);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+}
+#InfoInfoInfo {
       position: absolute;
       top: 50px;
       width: 100%;
@@ -627,12 +731,31 @@ li {
       color: white;
       font-size: 20px;
 }
+.textInfo {
+      position: absolute;
+      left: 3px;
+      width: 100px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+}
 .TextZVZO {
+      position: absolute;
+      top: 120px;
+      width: 80%;
+      height: 500px;
+      background-color: transparent;
+}
+.infoINfoZ {
       position: absolute;
       top: 120px;
       width: 80%;
       height: 400px;
       background-color: transparent;
+      color: white;
 }
 .Verion {
       width: 100%;
@@ -649,17 +772,17 @@ li {
       position: absolute;
       top: 60px;
       width: 100%;
-      height: 100px;
+      height: 60px;
       background-color: transparent;
       border-radius: 5px;
-      color: grey;
+      color: rgb(245, 245, 245);
       font-size: 15px;
       display: flex;
       justify-content: left;
 }
 .VersionZ {
       width: 100%;
-      height: 160px;
+      height: 140px;
       background-color: rgba(182, 182, 182, 0.151);
       border-radius: 5px;
 }
@@ -667,7 +790,15 @@ li {
       position: absolute;
       top: 200px;
       width: 100%;
-      height: 180px;
+      height: 150px;
+      background-color: rgba(0, 0, 0, 0.233);
+      border-radius: 5px;
+}
+.OV1 {
+      position: absolute;
+      top: 380px;
+      width: 100%;
+      height: 165px;
       background-color: rgba(0, 0, 0, 0.233);
       border-radius: 5px;
 }
@@ -704,5 +835,17 @@ li {
       font-size: 18px;
       display: flex;
       justify-content: left;
+      align-items: center;
+}
+.InfoUsers {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 100px;
+      background-color: rgb(32, 32, 32);
+      color: white;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
       align-items: center;
 }

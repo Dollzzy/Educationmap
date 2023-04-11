@@ -1,11 +1,9 @@
 let versiune = document.querySelector(".Verion")
 let NewsV = document.querySelector(".NewsV")
-let v = '1.1-Alpha'
+let v = '1.2-Alpha'
 let n = `
-    -Bug fixed<br>
-    -Adaugare Setari<br>
-    -Adaugare pagina pentru Versiune<br>
-    -Eliminare menu din Sectiune pentru capitole<br>
+    -Modificare design<br>
+    -Adaugare pagina de info<br>
 `
 
     versiune.innerHTML ='Versiune: ' + v

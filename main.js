@@ -18,11 +18,22 @@
  var SettingsOpen = document.getElementById("SettingsOpen")
  var VersionOpen = document.getElementById("VersionOpen")
  var VersionClosePP = document.getElementById("VersionClosePP")
+ var InfoClosePP = document.getElementById("InfoClosePP")
+ var InfoOpen = document.getElementById("InfoOpen")
+ var btnInfo = document.getElementById("btnInfo")
  var btnVer = document.getElementById("btnVer")
+
+ btnInfo.addEventListener('click',()=> {
+  InfoOpen.style.display= 'block'
+})
+InfoClosePP.addEventListener('click',()=> {
+  InfoOpen.style.display= 'none'
+})
  SearchINP.addEventListener('keypress', function (e) {
       var inp2 = SearchINP;
       if (e.key === 'Enter') {
         Searchinp.value = inp2.value
+        inp2.value = ''
         SH()
         PrincipalPage.style.display = 'none'
         SearchMenu.style.display = 'block'
