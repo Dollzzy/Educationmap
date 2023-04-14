@@ -28,6 +28,7 @@ body {
       background-color: transparent;
       border: none;
       color: white;
+      cursor: pointer;
 }
 #mainPP {
       width: 100%;
@@ -775,7 +776,7 @@ li {
       height: 60px;
       background-color: transparent;
       border-radius: 5px;
-      color: rgb(245, 245, 245);
+      color: rgb(133, 133, 133);
       font-size: 15px;
       display: flex;
       justify-content: left;
@@ -783,59 +784,8 @@ li {
 .VersionZ {
       width: 100%;
       height: 140px;
-      background-color: rgba(182, 182, 182, 0.151);
-      border-radius: 5px;
-}
-.OV {
-      position: absolute;
-      top: 200px;
-      width: 100%;
-      height: 150px;
-      background-color: rgba(0, 0, 0, 0.233);
-      border-radius: 5px;
-}
-.OV1 {
-      position: absolute;
-      top: 380px;
-      width: 100%;
-      height: 165px;
-      background-color: rgba(0, 0, 0, 0.233);
-      border-radius: 5px;
-}
-.VerionO {
-      width: 100%;
-      height: 50px;
       background-color: transparent;
       border-radius: 5px;
-      color: rgba(255, 255, 255, 0.61);
-      font-size: 20px;
-      display: flex;
-      justify-content: left;
-      align-items: center;
-}
-.NewsVPO {
-      position: absolute;
-      top: 60px;
-      width: 100%;
-      height: 120px;
-      background-color: transparent;
-      border-radius: 5px;
-      color: grey;
-      font-size: 15px;
-      display: flex;
-      justify-content: left;
-}
-.TextinfoVer {
-      position: absolute;
-      top: 170px;
-      width: 100%;
-      height: 20px;
-      background-color: transparent;
-      color: grey;
-      font-size: 18px;
-      display: flex;
-      justify-content: left;
-      align-items: center;
 }
 .InfoUsers {
       position: absolute;
